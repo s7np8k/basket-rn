@@ -1,11 +1,11 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-export default class Tab2Screen extends React.Component {
+export default class TwiterTab extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-            <Text>TAB 2</Text>
+            <Text>TAB 3</Text>
       </View>
     );
   }

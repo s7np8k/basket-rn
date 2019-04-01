@@ -6,9 +6,9 @@ import LinearGradient from "react-native-linear-gradient"
 import LaunchScreen from "../screens/LaunchScreen";
 import TeamsScreen from "../screens/TeamsScreen";
 import TeamScreen from "../screens/TeamScreen";
-import Tab1Screen from "../screens/TeamScreenTabs/Tab1Screen";
-import Tab2Screen from "../screens/TeamScreenTabs/Tab2Screen";
-import Tab3Screen from "../screens/TeamScreenTabs/Tab3Screen";
+import RosterTab from "../screens/TeamScreenTabs/RosterTab";
+import NewsTab from "../screens/TeamScreenTabs/NewsTab";
+import TwiterTab from "../screens/TeamScreenTabs/TwiterTab";
 
 
 
@@ -22,7 +22,7 @@ const AppTabNavigator = createBottomTabNavigator({
     },
   },
   Tab1: {
-    screen: Tab1Screen,
+    screen: RosterTab,
     navigationOptions: {
       tabBarLabel: 'Roster',
       tabBarIcon: ({tintColor}) =>
@@ -30,7 +30,7 @@ const AppTabNavigator = createBottomTabNavigator({
     },
   },
   Tab2: {
-    screen: Tab2Screen,
+    screen: NewsTab,
     navigationOptions: {
       tabBarLabel: 'News',
       tabBarIcon: ({tintColor}) =>
@@ -38,11 +38,11 @@ const AppTabNavigator = createBottomTabNavigator({
     },
   },
   Tab3: {
-    screen: Tab3Screen,
+    screen: TwiterTab,
     navigationOptions: {
-      tabBarLabel: 'xxxx',
+      tabBarLabel: 'Twitter',
       tabBarIcon: ({tintColor}) =>
-          <Icon name="access-point" size={25} color={tintColor} />
+          <Icon name="twitter" size={25} color={tintColor} />
     },
   },
 });

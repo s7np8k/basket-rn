@@ -9,15 +9,16 @@ import Api from "../services/Api"
 const { height, width } = Dimensions.get('window');
 
 export default class TeamScreen extends React.Component {
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: navigation.getParam('teamName', 'Team name'),
+    };
+  };
   constructor(props) {
     super(props);
     this.state = {}
     // Api.getGameScores()
   }
-
-  static navigationOptions = ({ navigation }) => ({
-    title: navigation.getParam('teamName', 'Team name'),
-  });
 
   render() {
     const { navigation } = this.props
